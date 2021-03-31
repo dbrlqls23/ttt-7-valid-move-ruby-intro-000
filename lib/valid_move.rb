@@ -10,7 +10,7 @@ end
 
 def valid_move?(board, index)
 # binding.pry
-if position_taken?(board, index)
+if !position_taken?(board, index) && index >= 0 && index <= board.length
  return true
 else
   return nil || false
