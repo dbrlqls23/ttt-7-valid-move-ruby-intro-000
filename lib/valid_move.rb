@@ -1,11 +1,12 @@
 # code your #valid_move? method here
 # require 'pry'
+require_relative "../lib/position_taken.rb"
 def valid_move?(board, index)
 # binding.pry
 if position_taken?
- execute truthy
+ return true
 else
-  execute falsey
+  return nil || false 
 end
 end
 
